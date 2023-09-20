@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dbow3</name>
+  <version>0.0.0</version>
+  <description>dbow3 with catkin support</description>
+  <maintainer email="matias@robots.ox.ac.uk">Matias Mattamala</maintainer>
+
+  <license>See LICENSE.txt</license>
+  <buildtool_depend>cmake</buildtool_depend>
+  
+  <export>
+    <!-- Specify that this is not really a Catkin package-->
+    <build_type>cmake</build_type>
+  </export>
+</package>
