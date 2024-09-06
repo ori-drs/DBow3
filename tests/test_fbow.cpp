@@ -17,7 +17,7 @@ using namespace std;
 using namespace std;
 
 
-std::vector< cv::Mat  >  loadFeatures( std::vector<string> path_to_images,string descriptor="") throw (std::exception){
+std::vector< cv::Mat  >  loadFeatures( std::vector<string> path_to_images,string descriptor="") {
     //select detector
     cv::Ptr<cv::Feature2D> fdetector;
     if (descriptor=="orb")   fdetector=cv::ORB::create(2000);
@@ -303,7 +303,7 @@ public:
     char *_data=0;
     string _desc_name;
 
-    void saveToFile(const std::string &filepath)throw(std::exception){
+    void saveToFile(const std::string &filepath) {
         std::ofstream str(filepath);
         if (!str) throw std::runtime_error("Vocabulary::saveToFile could not open:"+filepath);
         //magic number

@@ -3,7 +3,10 @@
 # ----------------------------------------------------------------------------
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0.2)
 
-set(CMAKE_CXX_STANDARD 17)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+endif()
 
 PROJECT(DBoW3)
 set(PROJECT_VERSION "0.0.1")

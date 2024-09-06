@@ -18,7 +18,7 @@ using namespace std;
 using namespace std;
 
 
-std::vector< cv::Mat  >  loadFeatures( std::vector<string> path_to_images,string descriptor="") throw (std::exception){
+std::vector< cv::Mat  >  loadFeatures( std::vector<string> path_to_images,string descriptor="") {
     //select detector
     cv::Ptr<cv::Feature2D> fdetector;
     if (descriptor=="orb")   fdetector=cv::ORB::create(2000);
